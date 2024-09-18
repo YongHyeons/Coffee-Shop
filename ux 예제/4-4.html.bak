@@ -1,0 +1,19 @@
+<!doctype htme>
+<html>
+<meta charset ="UTF-8">
+<head><title>4-4</title></head>
+<style>
+body.main { background-color : skyblue;}
+.name {text-align : center; color : brown; font-size : 40px;}
+.help {color : blue;}
+.warning {color : red; font-size : 30px;}
+.hot {background-color : DarkOrange;}
+</style>
+<body class="main">
+<h3 class="name">클래스 셀렉터</h3>
+<hr>
+<p class="help">도움말</p>
+<p class="warning">!!경고 메세지</p>
+<p class="hot">뜨거운 태양</p>
+</body>
+</html>

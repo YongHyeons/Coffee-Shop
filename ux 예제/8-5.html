@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8장</title>
+<script>
+function aaa(){
+	var text = prompt("라면을 끓이는 순서를 입력하세요.", "");
+	var i = document.getElementById("parent");
+	var newItem = document.createElement("li");
+	newItem.innerHTML = text;
+	newItem.onclick = function(){
+		var p = this.parentElement;
+		p.removeChild(this);
+	};
+	i.appendChild(newItem);
+}
+</script>
+</head>
+<body>
+<h3>라면을 끓이는 순서</h3>
+<hr>
+<ol type="A" style="background-color:yellowgreen" id="parent" onclick="aaa()">
+   <li>물을 끓인다.</li>
+</ol>
+</body>
+</html>

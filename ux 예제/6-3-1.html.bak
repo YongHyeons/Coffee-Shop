@@ -1,0 +1,23 @@
+﻿<!doctype html>
+<html lang="kr">
+ <head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+
+ </head>
+ <body>
+  <h3>document.write로 표만들기</h3>
+  <hr>
+<script>
+
+for (var i = 1; i < 6; i++)
+{
+	for (k=0; k < i; k++)
+		document.write("*");
+	document.write("<br>");
+}
+
+</script>
+ </body>
+</html>

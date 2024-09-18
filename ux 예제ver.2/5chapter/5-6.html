@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="Author" content="이재성">
+<meta name="Keywords" content="animation transform">
+<meta name="Description" content="html, css">
+<meta charset="UTF-8">
+<title>2016081029 이재성</title>
+<style>
+
+@keyframes rotation {
+	0% {transform : rotate(0deg);}
+	25% {transform : rotate(-90deg);}
+	50% {transform : rotate(0deg);}
+	75% {transform : rotate(90deg);}
+	100% {transform : rotate(0deg);}
+}
+
+
+#tran {
+	animation-name : rotation;
+	animation-duration : 1s;
+	animation-iteration-count : infinite;
+}
+
+
+</style>
+</head>
+<body>
+
+<h3>어지러워요</h3>
+<hr>
+<img id="tran" src="spongebob.png" width="100" height="100“ alt="animation">
+
+</body>
+</html>

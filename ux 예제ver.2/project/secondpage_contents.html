@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta name="Author" content="이재성">
+<meta name="Keywords" content="click and find">
+<meta name="Description" content="html, css, javascript">
+<meta charset="UTF-8">
+<title>secondpage_contents</title>
+<style>
+	div {
+		position: absolute;
+	}
+	.a {
+		 left: 20%;
+		 top: 5%;
+	}
+	.b {
+		border : 2px solid green;
+		left : 5%;
+		top : 12%;
+		width : 90%;
+		height : 87%;
+	}
+	.hutatsu {
+		width : 400px;
+		height : 250px;
+	}
+	.hitotsu {
+		width : 500px;
+		height : 250px;
+	}
+	table {
+		border:solid 1px black;
+		border-collapse:collapse;
+		width:100%;
+		font-size:1.5em;
+		text-align:center;
+	}
+	tr {
+		border:solid 1px black;
+	}
+	th {
+		background:#BDBDBD;
+	}
+</style>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+<script type='text/javascript'>
+	function check() {
+	var target = document.getElementById("selectBox");
+	filter(target.options[target.selectedIndex].value);
+	}
+	function filter(val){
+		if(val == 'article') {
+			if($('#txtFilter').val()=="") {
+			$("#languageTBody tr").css('display','');
+			}
+			else{
+				$("#languageTBody tr").css('display','none');
+				$("#languageTBody tr[name*='"+$('#txtFilter').val()+"']").css('display','');
+			}
+			return false;
+		}
+		if (val == "name"){
+			if($('#txtFilter').val()=="") {
+			$("#languageTBody td").css('display','');
+			}
+			else{
+				$("#languageTBody td").css('display','none');
+				$("#languageTBody td[name*='"+$('#txtFilter').val()+"']").css('display','');
+			}
+			return false;
+		}
+	}
+</script>
+</HEAD>
+<BODY background="background.jpg">
+	<form>
+		<div class="a">
+			<select name="selectBox" id="selectBox">
+				<option value="article">법 조항</option>
+				<option value="name">법 이름</option>
+			<input type="text" id="txtFilter" onkeyup='{check();}' onkeypress='javascript:if(event.keyCode==13){check();}' style=" width:600px; letter-spacing: 3px;">
+		</div>
+	</form>
+	<div class="b" style="overflow : scroll; width : 90%;">
+	<table>
+	<table>
+		<thead>
+			<tr><th>조항</th><th>이름</th><th>범칙금</th><th>과태료</th></tr>
+		</thead>
+		<tbody id='languageTBody'>
+			<tr name="제5조"><td name="신호 또는 지시 위반">제5조</td><td name="신호 또는 지시 위반">신호 또는 지시 위반</td><td name="신호 또는 지시 위반">60000원 15점</td><td name="신호 또는 지시 위반">70000원</td></tr>
+			<tr name="제14조2항"><td name="진로변경 위반">제14조 2항</td><td name="진로변경 위반">진로변경 위반</td><td name="진로변경 위반">30000원 10점</td><td name="진로변경 위반">없음</td></tr>
+			<tr name="제14조5항"><td name="진로변경 방법 위반">제14조 5항</td><td name="진로변경 방법 위반">진로변경 방법 위반</td><td name="진로변경 방법 위반">30000원 10점</td><td name="진로변경 방법 위반">없음</td></tr>
+		</body>
+	</table>
+	</div>
+</BODY>
+</HTML>

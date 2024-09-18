@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+  body{
+	background : #2d2d2d;
+  }
+  span{
+	color : white;
+	font-size : 13px;
+	font-weight: bold;
+    font-family: "Trebuchet MS";
+  }
+  div{
+  display : inline-block;
+  text-align : center;
+  }
+  div:hover{
+  box-shadow : 2px 2px 2px yellow, 
+		            0px 0px 3px yellow,
+				    0px 0px 30px yellow;}
+  }
+
+  </style>
+
+   <script>
+	function check(obj) {
+		if(obj.alt == "1")
+			text = "브라우니 쿠키" + "\n\n" + "진한 초콜릿의 풍미가 가득 느껴지는 쿠키" + "\n" + "칼로리(178kcal)   당류(13g)   단백질(2g)   포화지방(4.1g)  " + "\n" + "나트륨(170mg)";
+		else if(obj.alt == "2")
+			text = "초콜렛 청크 쿠키" + "\n\n" + "진하고 부드러운 초콜렛칩이 풍부한 쿠키로 오후의 홍차와 함께 마시면 더욱 풍부한 맛" + "\n" + "칼로리(185kcal)   당류(14g)   단백질(2g)   포화지방(4.5g)  " + "\n" + "나트륨(175mg)";
+		else if(obj.alt == "3")
+			text = "마카다미아 쿠키" + "\n\n" + "마카다미아 넛의 고소함과 화이트 초콜렛의 달콤함이 조화를 이룬 쿠키" + "\n" + "칼로리(190kcal)   당류(13g)   단백질(2g)   포화지방(4g)  " + "\n" + "나트륨(165mg)";
+		alert(text);
+	}
+  
+  </script>
+ </head>
+ <body>
+ <div>
+	<img src="bcookey.PNG" width="140" height="200" alt="1" onclick="check(this)" ><br><span>브라우니 쿠키</span>
+	</div>
+ <div>
+	<img src="ccookey.PNG" width="140" height="200" alt="2" onclick="check(this)"  ><br><span>초콜렛 청크 쿠키</span>
+	</div>
+ <div>
+	<img src="mcookey.PNG" width="140" height="200" alt="3" onclick="check(this)" ><br><span>마카다미아 쿠키</span>
+	</div>
+
+ <br><br>
+	</body>
+</html>

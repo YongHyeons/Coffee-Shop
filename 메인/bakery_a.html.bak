@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="2016081053">
+  <title>Document</title>
+  <style>
+  body{
+	background : #2d2d2d;
+  }
+  span{
+	color : white;
+	font-size : 13px;
+	font-weight: bold;
+    font-family: "Trebuchet MS";
+  }
+  div{
+  display : inline-block;
+  text-align : center;
+  }
+  div:hover{
+  box-shadow : 2px 2px 2px yellow, 
+		            0px 0px 3px yellow,
+				    0px 0px 30px yellow;}
+  }
+
+  </style>
+
+   <script>
+	function check(obj) {
+		if(obj.alt == "1")
+			text = "허니 카라멜 브레드" + "\n\n" + "은은한 시나몬과 진한 카라멜 코팅이 된 허니브레드에 휘핑크림을 더해 한결 부드러워진 맛의 허니브레드" + "\n" + "칼로리(729kcal)   당류(27g)   단백질(14g)   포화지방(24.5g)  " + "\n" + "나트륨(853mg)";
+		else if(obj.alt == "2")
+			text = "핫치킨 브리또" + "\n\n" + "매콤한 닭고기와 채소가 들어가 든든하게 한끼 식사로 좋은 멕시코 요리" + "\n" + "칼로리(365kcal)   당류(4g)   단백질(20g)   포화지방(4.4g)  " + "\n" + "나트륨(970mg)";
+		else if(obj.alt == "3")
+			text = "소고기 브리또" + "\n\n" + "한국식 불고기와 채소가 들어가 든든하게 한끼 식사로 좋은 퓨전 멕시코 음식" + "\n" + "칼로리(440kcal)   당류(5g)   단백질(19g)   포화지방(7g)  " + "\n" + "나트륨(960mg)";
+		else if(obj.alt == "4")
+			text = "생크림 티라미수빵" + "\n\n" + "에스프레소 시럽을 넣은 빵에 생크림을 올려 티라미수의 맛을 느낄 수 있다." + "\n" + "칼로리(234kcal)   당류(13g)   단백질(4g)   포화지방(8.3g)  " + "\n" + "나트륨(164mg)";
+		alert(text);
+	}
+  
+  </script>
+ </head>
+ <body>
+ <div>
+	<img src="허니브레드.PNG" width="140" height="200" alt="1" onclick="check(this)" ><br><span>허니 카라멜 브레드</span>
+	</div>
+ <div>
+	<img src="핫치킨브리또.PNG" width="140" height="200" alt="2" onclick="check(this)"  ><br><span>핫치킨 브리또</span>
+	</div>
+ <div>
+	<img src="소고기브리또.PNG" width="140" height="200" alt="3" onclick="check(this)" ><br><span>소고기 브리또</span>
+	</div>
+<div>
+	<img src="티라미수빵.PNG" width="140" height="200" alt="4" onclick="check(this)" ><br><span>생크림 티라미수빵</span>
+	</div>
+ <br><br>
+	</body>
+</html>

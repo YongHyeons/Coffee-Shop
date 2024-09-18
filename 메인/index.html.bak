@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="Author" content="2016081053">
+
+    <title>My Cafe</title>
+    <style>
+				body{
+				background-image : url("배경.jpeg");
+				background-size : cover;
+				}
+				hr {
+				color : white;
+				}
+				#bottom{
+						position : absolute;
+						top: 1150px;
+						left: 0px;
+						right : 0px;
+						height : 100px;
+						z-index : 5;
+						text-align: center;
+						background : #2d2d2d;
+				}
+				p {
+				color: white;
+                        font-size: 10px;
+                        font-weight: bold;
+                        font-family: "Trebuchet MS"
+				}
+				#bottom ul{
+				width : 1000px;
+				padding : 7px;
+				margin : 0 auto;
+				overflow : hidden;
+                }
+				 #bottom ul li {
+				float: left;
+				width : 20%;
+				text-align: center;
+				background : #2d2d2d;
+                }
+
+                #bottom .bottomLink {
+						display : block;
+                        color: white;
+                        font-size: 10px;
+                        font-weight: bold;
+                        font-family: "Trebuchet MS";
+                }
+				#bottom .bottomLink:hover {
+                      text-shadow : 2px 2px 2px white, 
+							0 0 25px white, 0 0 5px white;
+                }
+				#cafe{
+						position : absolute;
+						top: 150px;
+						left: 100px;
+						z-index : 1;
+				}
+				#recommend{
+						position : absolute;
+						top: 610px;
+						left: 560px;
+						z-index : 2;
+				}
+				#recommend2{
+						position : absolute;
+						top: 150px;
+						left: 760px;
+						z-index : 3;
+				}
+				#bean{
+						position : absolute;
+						top: 610px;
+						left: 100px;
+						z-index : 4;
+				}
+				a{
+				text-decoration:none;
+				}
+				li{
+				list-style-type : none;
+				}
+				#topMenu{
+						position: fixed;
+						top: 0;
+						left: 0;
+						right: 0;
+						opacity : 0.9;
+						background : #2d2d2d;
+						z-index : 10;
+                }
+				#topMenu ul{
+				width : 1000px;
+				margin : 0 auto;
+				overflow : hidden;
+                }
+				 #topMenu ul li {
+				float: left;
+				width : 20%;
+				height : 50%;
+				line-height: 100px; 
+				text-align: center;
+				background : #2d2d2d;
+                }
+                #topMenu .menuLink {
+						display : block;
+                        color: white;
+                        font-size: 12px;
+                        font-weight: bold;
+                        font-family: "Trebuchet MS";
+                }
+                #topMenu .menuLink:hover {
+                        color: yellow;
+                        background-color: #4d4d4d;
+                }
+				#cafe:hover{
+				box-shadow : 2px 2px 2px white, 
+		            0px 0px 3px white,
+				    0px 0px 30px white;}
+				#recommend:hover{
+				box-shadow : 2px 2px 2px white, 
+		            0px 0px 3px white,
+				    0px 0px 30px white;}
+				#recommend2:hover{
+				box-shadow : 2px 2px 2px white, 
+		            0px 0px 3px white,
+				    0px 0px 30px white;}
+				#bean:hover{
+				box-shadow : 2px 2px 2px white, 
+		            0px 0px 3px white,
+				    0px 0px 30px white;}
+				#cafetag {
+						position : fixed;
+						top: 0px;
+						left: 50px;
+						z-index : 20;
+				}
+  </style>
+	 
+</head>
+<body>
+	<div id="cafetag">
+	<a href="main.html">
+	<img src="로고.PNG" width="200" height="100" alt=" ">
+	</a>
+	</div>
+	<nav id="topMenu">
+		<ul>
+			<li><a class="menuLink" href="menu_a.html">Coffee</a></li>
+			<li><a class="menuLink" href="menu_b.html">Bread</a></li>
+			<li><a class="menuLink" href="menu_c.html">Cafe MD</a></li>
+			<li><a class="menuLink" href="menu_d.html">Coffee Beans</a></li>
+			<li><a class="menuLink" href="menu_e.html">Potency</a></li>
+		</ul>
+	</nav>
+	<div id="cafe">
+	<img src="카페.jpg" width="650" height="450" alt=" ">
+	</div>
+	<div id="recommend"><a href = "menu_a.html">
+	<img src="추천.PNG" width="600" height="350" alt=" "></a>
+	</div>
+	<div id="recommend2"><a href = "menu_b.html">
+	<img src="추천브레드.jpg" width="400" height="450" alt=" "></a>
+	</div>
+	<div id="bean"><a href = "menu_d.html">
+	<img src="원두.jpg" width="450" height="350" alt=" ">
+	</div>
+
+	<div id="bottom">
+	<nav>
+		<ul>
+			<li><a class="bottomLink" href="menu_a.html">Coffee</a></li>
+			<li><a class="bottomLink" href="menu_b.html">Bread</a></li>
+			<li><a class="bottomLink" href="menu_c.html">Cafe MD</a></li>
+			<li><a class="bottomLink" href="menu_d.html">Coffee Beans</a></li>
+			<li><a class="bottomLink" href="menu_e.html">Potency</a></li>
+		</ul>
+	</nav>
+	<hr>
+	<p>
+	Copyright<br>명지전문대학 컴퓨터공학과 2016081053 이용현
+	</p>
+	</div>
+	</body>
+</html>
+

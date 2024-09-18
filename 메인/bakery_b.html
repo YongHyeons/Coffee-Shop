@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="2016081053">
+  <title>Document</title>
+  <style>
+  body{
+	background : #2d2d2d;
+  }
+  span{
+	color : white;
+	font-size : 13px;
+	font-weight: bold;
+    font-family: "Trebuchet MS";
+  }
+  div{
+  display : inline-block;
+  text-align : center;
+  }
+  div:hover{
+  box-shadow : 2px 2px 2px yellow, 
+		            0px 0px 3px yellow,
+				    0px 0px 30px yellow;}
+  }
+
+  </style>
+
+   <script>
+	function check(obj) {
+		if(obj.alt == "1")
+			text = "초코티라미수" + "\n\n" + "진한 초콜릿과 코코아 시트로 만든 초콜릿 케이크" + "\n" + "칼로리(340kcal)   당류(20g)   단백질(7g)   포화지방(15g)  " + "\n" + "나트륨(308mg)";
+		else if(obj.alt == "2")
+			text = "수플레 치즈 케이크" + "\n\n" + "크림치즈와 달콤한 초콜렛이 조화를 이루고 진하고 고운 코코아 파우더가 맛에 깊이를 더하는 메뉴" + "\n" + "칼로리(219kcal)   당류(17g)   단백질(4g)   포화지방(7.2g)  " + "\n" + "나트륨(36mg)";
+		else if(obj.alt == "3")
+			text = "데블스 초코 케이크" + "\n\n" + "치즈 고유의 부드러움과 촉촉함이 살아있는 케이크" + "\n" + "칼로리(272kcal)   당류(16g)   단백질(6g)   포화지방(12g)  " + "\n" + "나트륨(246mg)";
+		alert(text);
+	}
+  
+  </script>
+ </head>
+ <body>
+ <div>
+	<img src="chotira.PNG" width="140" height="200" alt="1" onclick="check(this)" ><br><span>초코티라미수</span>
+	</div>
+ <div>
+	<img src="chiz.PNG" width="140" height="200" alt="2" onclick="check(this)"  ><br><span>수플레 치즈 케이크</span>
+	</div>
+ <div>
+	<img src="chocak.PNG" width="140" height="200" alt="3" onclick="check(this)" ><br><span>데블스 초코 케이크</span>
+	</div>
+ <br><br>
+	</body>
+</html>

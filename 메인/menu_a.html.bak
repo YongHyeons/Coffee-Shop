@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="2016081053">
+  <title>Document</title>
+	<style>
+	body{
+				background-image : url("back.jpeg");
+				background-size : cover;
+				}
+	#bottom{
+				position : absolute;
+				top: 1200px;
+				left: 0px;
+				right : 0px;
+				height : 100px;
+				z-index : 5;
+				text-align: center;
+				background : #2d2d2d;
+				}
+	p {
+				color: white;
+                font-size: 10px;
+                font-weight: bold;
+                font-family: "Trebuchet MS"
+				}
+	#bottom ul{
+				width : 1000px;
+				padding : 7px;
+				margin : 0 auto;
+				overflow : hidden;
+                }
+	#bottom ul li {
+				float: left;
+				width : 20%;
+				text-align: center;
+				background : #2d2d2d;
+                }
+
+    #bottom .bottomLink {
+				display : block;
+                color: white;
+                font-size: 10px;
+                font-weight: bold;
+                font-family: "Trebuchet MS";
+                }
+	#bottom .bottomLink:hover {
+                text-shadow : 2px 2px 2px white, 
+					0 0 25px white, 0 0 5px white;
+                }
+	a{
+				text-decoration:none;
+	}
+	li{
+				list-style-type : none;
+	}
+	#topMenu{
+				position: fixed;
+				top: 0;
+				left: 0;
+				right: 0;
+				opacity : 0.9;
+				background : #2d2d2d;
+				z-index : 10;
+    }
+	#topMenu ul{
+				width : 1000px;
+				margin : 0 auto;
+				overflow : hidden;
+    }
+	#topMenu ul li {
+				float: left;
+				width : 20%;
+				height : 50%;
+				line-height: 100px; 
+				text-align: center;
+				background : #2d2d2d;
+    }
+    #topMenu .menuLink {
+						display : block;
+                        color: white;
+                        font-size: 12px;
+                        font-weight: bold;
+                        font-family: "Trebuchet MS";
+    }
+    #topMenu .menuLink:hover {
+                        color: yellow;
+                        background-color: #4d4d4d;
+    }
+
+	#inHere{
+	position : absolute;
+		top: 350px;
+		left: 200px;
+		width : 1100px;
+		height : 700px;
+	}	
+	#menutype{
+		background : #2d2d2d;
+		color : white;
+		position : absolute;
+		top: 250px;
+		left: 200px;
+		width : 700px;
+		height : 30px;
+		font-size: 16px;
+        font-weight: bold;
+        font-family: "Trebuchet MS";
+		border : 2px solid ;
+		padding : 10px;
+	}
+	#cafetag {
+		position : fixed;
+		top: 0px;
+		left: 50px;
+		z-index : 20;
+		}
+	</style>
+
+  <script language = "javascript">
+  function output(form) { 
+	  var str = "";
+    for(var i = 0; i < form.coffee.length; i++) {
+      if(form.coffee[0].checked) {      
+		str +=  "<iframe id = 'ifrm' src = 'coffeelist_a.html' width='1200px' height='800px' scrolling= 'no'>";
+		str +=  "</iframe>";
+		document.getElementById("inHere").innerHTML = str; break;
+     }
+	 else if(form.coffee[1].checked) {      
+		str +=  "<iframe id = 'ifrm' src = 'coffeelist_b.html' width='1200px' height='800px' scrolling= 'no'>";
+		str +=  "</iframe>";
+		document.getElementById("inHere").innerHTML = str; break;
+     }
+	 else if(form.coffee[2].checked) {      
+		str +=  "<iframe id = 'ifrm' src = 'coffeelist_c.html' width='1200px' height='800px' scrolling= 'no'>";
+		str +=  "</iframe>";
+		document.getElementById("inHere").innerHTML = str; break;
+     }
+	 else if(form.coffee[3].checked) {      
+		str +=  "<iframe id = 'ifrm' src = 'coffeelist_d.html' width='1200px' height='800px' scrolling= 'no'>";
+		str +=  "</iframe>";
+		document.getElementById("inHere").innerHTML = str; break;
+     }
+    }
+  }   
+</script>
+ </head>
+ <body>
+	<div id="cafetag">
+	<a href="main.html">
+	<img src="logo.png" width="200" height="100" alt=" ">
+	</a>
+	</div>
+	<nav id="topMenu">
+		<ul>
+			<li><a class="menuLink" href="menu_a.html">Coffee</a></li>
+			<li><a class="menuLink" href="menu_b.html">Bread</a></li>
+			<li><a class="menuLink" href="menu_c.html">Cafe MD</a></li>
+			<li><a class="menuLink" href="menu_d.html">Coffee Beans</a></li>
+			<li><a class="menuLink" href="menu_e.html">Potency</a></li>
+		</ul>
+	</nav>
+
+
+<div id="menutype" >
+<form name = "select_form">
+  <input type = "radio" name = "coffee" value = "0" onclick = "output(this.form)" checked>COFFEE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type = "radio" name = "coffee" value = "1" onclick = "output(this.form)">ADE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type = "radio" name = "coffee" value = "2" onclick = "output(this.form)">FLATCCINO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type = "radio" name = "coffee" value = "3" onclick = "output(this.form)">BLEANDING TEA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</form>
+</div>
+	  
+	  <div id="inHere"><iframe id = "ifrm" src = "coffeelist_a.html" width="1200px" height="800px" scrolling= "no"></iframe></div>
+	  
+	  
+	  <div id="bottom">
+	<nav>
+		<ul>
+			<li><a class="bottomLink" href="menu_a.html">Coffee</a></li>
+			<li><a class="bottomLink" href="menu_b.html">Bread</a></li>
+			<li><a class="bottomLink" href="menu_c.html">Cafe MD</a></li>
+			<li><a class="bottomLink" href="menu_d.html">Coffee Beans</a></li>
+			<li><a class="bottomLink" href="menu_e.html">Potency</a></li>
+		</ul>
+	</nav>
+	<hr>
+	<p>
+	Copyright<br>명지전문대학 컴퓨터공학과 2016081053 이용현
+	</p>
+	</div>
+ </body>
+</html>

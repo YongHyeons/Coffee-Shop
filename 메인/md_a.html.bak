@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+  body{
+	background : #2d2d2d;
+  }
+  span{
+	color : white;
+	font-size : 13px;
+	font-weight: bold;
+    font-family: "Trebuchet MS";
+  }
+  div{
+  display : inline-block;
+  text-align : center;
+  }
+  div:hover{
+  box-shadow : 2px 2px 2px yellow, 
+		            0px 0px 3px yellow,
+				    0px 0px 30px yellow;}
+  }
+
+  </style>
+
+   <script>
+	function check(obj) {
+		if(obj.alt == "1")
+			text = "머그컵_1";
+		else if(obj.alt == "2")
+			text = "텀블러_1";
+		else if(obj.alt == "3")
+			text = "텀블러_2";
+		else if(obj.alt == "4")
+			text = "텀블러_3";
+		alert(text);
+	}
+  
+  </script>
+ </head>
+ <body>
+ <div>
+	<img src="cup1.png" width="140" height="200" alt="1" onclick="check(this)" ><br><span>머그컵_1</span>
+	</div>
+ <div>
+	<img src="tum1.png" width="140" height="200" alt="2" onclick="check(this)"  ><br><span>텀블러_1</span>
+	</div>
+ <div>
+	<img src="tum2.png" width="140" height="200" alt="3" onclick="check(this)" ><br><span>텀블러_2</span>
+	</div>
+<div>
+	<img src="tum3.png" width="140" height="200" alt="4" onclick="check(this)" ><br><span>텀블러_3</span>
+	</div>
+
+ <br><br>
+	</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="2016081053">
+  <title>Document</title>
+  <style>
+  body{
+	background : #2d2d2d;
+  }
+  span{
+	color : white;
+	font-size : 13px;
+	font-weight: bold;
+    font-family: "Trebuchet MS";
+  }
+  div{
+  display : inline-block;
+  text-align : center;
+  }
+  div:hover{
+  box-shadow : 2px 2px 2px yellow, 
+		            0px 0px 3px yellow,
+				    0px 0px 30px yellow;}
+  }
+
+  </style>
+
+   <script>
+	function check(obj) {
+		if(obj.alt == "1")
+			text = "청포도에이드" + "\n\n" + "청포도의 상큼함과 탄산의 시원함을 느낄 수 있는 음료" + "\n" + "칼로리(131kcal)   당류(30g)   단백질(0g)   포화지방(0g)  " + "\n" + "카페인(0mg)";
+		else if(obj.alt == "2")
+			text = "자몽에이드" + "\n\n" + "자몽의 쌉싸름한 맛과 상큼함을 동시에 느낄 수 있으며, 탄산의 청향함을 함께 맛볼 수 있는 음료" + "\n" + "칼로리(124kcal)   당류(29g)   단백질(1g)   포화지방(0g)  " + "\n" + "카페인(0mg)";
+		else if(obj.alt == "3")
+			text = "라임에이드" + "\n\n" + "상큼한 라임의 향이 입 안 가득 퍼지는 탄산 음료" + "\n" + "칼로리(134kcal)   당류(29g)   단백질(0g)   포화지방(0g)  " + "\n" + "카페인(0mg)";
+		alert(text);
+	}
+  
+  </script>
+ </head>
+ <body>
+ <div>
+	<img src="cade.PNG" width="140" height="200" alt="1" onclick="check(this)" ><br><span>청포도에이드</span>
+	</div>
+ <div>
+	<img src="jade.PNG" width="140" height="200" alt="2" onclick="check(this)"  ><br><span>자몽에이드</span>
+	</div>
+ <div>
+	<img src="rade.PNG" width="140" height="200" alt="3" onclick="check(this)" ><br><span>라임에이드</span>
+	</div>
+ <br><br>
+	</body>
+</html>

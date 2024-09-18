@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="2016081053">
+  <title>Document</title>
+  <style>
+  body{
+	background : #2d2d2d;
+  }
+  span{
+	color : white;
+	font-size : 13px;
+	font-weight: bold;
+    font-family: "Trebuchet MS";
+  }
+  div{
+  display : inline-block;
+  text-align : center;
+  }
+  div:hover{
+  box-shadow : 2px 2px 2px yellow, 
+		            0px 0px 3px yellow,
+				    0px 0px 30px yellow;}
+  }
+
+  </style>
+
+   <script>
+	function check(obj) {
+		if(obj.alt == "1")
+			text = "모카플랫치노" + "\n\n" + "에스프레소의 진한 맛과 초코렛의 풍미가 더해져 ㅡ달콤한 모카의 맛을 느낄 수 있는 플랫치노 음료" + "\n" + "칼로리(220kcal)   당류(32g)   단백질(2g)   포화지방(3.6g)  " + "\n" + "카페인(95mg)";
+		else if(obj.alt == "2")
+			text = "복숭아플랫치노" + "\n\n" + "복숭아의 리얼한 풍미와 꿀의 달콤함이 최적의 조화를 이룬 달콤하고 시원한 플랫치노" + "\n" + "칼로리(225kcal)   당류(49g)   단백질(0g)   포화지방(0g)  " + "\n" + "카페인(0mg)";
+		else if(obj.alt == "3")
+			text = "자몽플랫치노" + "\n\n" + "자몽의 새콤한 맛과 쌉싸름한 맛이 돋보이는 중독성 강한 음료" + "\n" + "칼로리(150kcal)   당류(35g)   단백질(1g)   포화지방(0g)  " + "\n" + "카페인(0mg)";
+		else if(obj.alt == "4")
+			text = "커피플랫치노" + "\n\n" + "에스프레소의 진한 맛 그대로 담아낸 플랫치노 음료" + "\n" + "칼로리(181kcal)   당류(26g)   단백질(2g)   포화지방(3.5g)  " + "\n" + "카페인(91mg)";
+		alert(text);
+	}
+  
+  </script>
+ </head>
+ <body>
+ <div>
+	<img src="모카플랫치노.PNG" width="140" height="200" alt="1" onclick="check(this)" ><br><span>모카플랫치노</span>
+	</div>
+ <div>
+	<img src="복숭아플랫치노.PNG" width="140" height="200" alt="2" onclick="check(this)"  ><br><span>복숭아플랫치노</span>
+	</div>
+ <div>
+	<img src="자몽플랫치노.PNG" width="140" height="200" alt="3" onclick="check(this)" ><br><span>자몽플랫치노</span>
+	</div>
+<div>
+	<img src="커피플랫치노.PNG" width="140" height="200" alt="4" onclick="check(this)" ><br><span>커피플랫치노</span>
+	</div>
+ <br><br>
+	</body>
+</html>

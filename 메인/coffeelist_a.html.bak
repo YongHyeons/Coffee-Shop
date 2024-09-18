@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="2016081053">
+  <title>Document</title>
+  <style>
+  body{
+	background : #2d2d2d;
+  }
+  span{
+	color : white;
+	font-size : 13px;
+	font-weight: bold;
+    font-family: "Trebuchet MS";
+  }
+  div{
+  display : inline-block;
+  text-align : center;
+  }
+  div:hover{
+  box-shadow : 2px 2px 2px yellow, 
+		            0px 0px 3px yellow,
+				    0px 0px 30px yellow;}
+  }
+
+  </style>
+
+   <script>
+	function check(obj) {
+		if(obj.alt == "1" || obj.alt == "2")
+			text = "카페 아메리카노" + "\n\n" + "구운 견과류의 고소한 향미와 다크초콜렛의 깊고 깔끔한 맛이 특징인 음료" + "\n" + "칼로리(8kcal)   당류(0g)   단백질(1g)   포화지방(0.1g)  " + "\n" + "카페인(91mg)";
+		else if(obj.alt == "3" || obj.alt == "4")
+			text = "카페모카" + "\n\n" + "모카시럽을 만나 한층 풍부해진 에스프레소에 우유로 부드러움을 더한 달콤한 휘핑크림이 곁들여진 음료" + "\n" + "칼로리(322kcal)   당류(26g)   단백질(8g)   포화지방(14.8g)  " + "\n" + "카페인(99mg)";
+		else if(obj.alt == "5" || obj.alt == "6")
+			text = "카푸치노" + "\n\n" + "에스프레소에 부드러운 우유 거품을 풍부하게 올린 음료" + "\n" + "칼로리(136kcal)   당류(9g)   단백질(7g)   포화지방(4.6g)  " + "\n" + "카페인(91mg)";
+		else if(obj.alt == "7" || obj.alt == "8")
+			text = "카라멜마끼야또" + "\n\n" + "폼 밀크 속에 감춰진 카라멜의 달콤함과 에스프레소의 진한 맛이 돋보이는 음료" + "\n" + "칼로리(217kcal)   당류(24g)   단백질(8g)   포화지방(5.3g)  " + "\n" + "카페인(91mg)";
+		else if(obj.alt == "9" || obj.alt == "10")
+			text = "카페라떼" + "\n\n" + "진한 에스프레소와 부드러운 우유가 만나 고소한 풍미를 더하는 음료" + "\n" + "칼로리(108kcal)   당류(7g)   단백질(5g)   포화지방(3.7g)  " + "\n" + "카페인(91mg)";
+		else if(obj.alt == "11" || obj.alt == "12")
+			text = "바닐라라떼" + "\n\n" + "부드러운 라떼에 은은한 바닐라 향이 더해져 더욱 달콤하게 즐길 수 있는 음료" + "\n" + "칼로리(218kcal)   당류(18g)   단백질(8g)   포화지방(6.7g)  " + "\n" + "카페인(103mg)";
+		else if(obj.alt == "13" || obj.alt == "14")
+			text = "민트모카" + "\n\n" + "상쾌한 민트향이 더해진 진한 모카와 부드러운 휘핑크림이 잘 어울리는 음료" + "\n" + "칼로리(335kcal)   당류(28g)   단백질(6g)   포화지방(16.3g)  " + "\n" + "카페인(113mg)";
+		else if(obj.alt == "15")
+			text = "니트로커피" + "\n\n" + "질소투입방식을 통해 신선하고 부드러운 거품과 목넘김, 풍미를 느낄 수 있는 커피" + "\n" + "칼로리(12kcal)   당류(0g)   단백질(1g)   포화지방(0g)  " + "\n" + "카페인(170mg)";
+		else if(obj.alt == "16")
+			text = "콜드브루" + "\n\n" + "커피의 깊은 단맛과 바디감, 균형잡힌 밸런스를 느낄수 있는 음료" + "\n" + "칼로리(6kcal)   당류(0g)   단백질(0g)   포화지방(0g)  " + "\n" + "카페인(74mg)";
+		else if(obj.alt == "17")
+			text = "콜드브루 라떼" + "\n\n" + "콜드브루의 깔끔하고 쌉싸름한 풍미가 고소한 우유와 만나 누구나 부담없이 즐길 수 있는 음료" + "\n" + "칼로리(128kcal)   당류(9g)   단백질(6g)   포화지방(4.3g)  " + "\n" + "카페인(140mg)";
+		else if(obj.alt == "18" || obj.alt == "19")
+			text = "화이트 초콜릿 모카" + "\n\n" + "화이트 초콜렛과 에스프레소의 조화로운 만남에 달콤한 휘핑크림까지 함께 즐길 수 있는 음료" + "\n" + "칼로리(310kcal)   당류(29g)   단백질(5g)   포화지방(14.9g)  " + "\n" + "카페인(91mg)";
+		else if(obj.alt == "20") 
+			text = "에스프레소" + "\n\n" + "정통 이탈리안 방식으로 고압을 이용하여 빠르게 추출된 커피" + "\n" + "칼로리(8kcal)   당류(0g)   단백질(1g)   포화지방(0.1g)  " + "\n" + "카페인(91mg)";
+		else if(obj.alt == "21")
+			text = "에스프레소" + "\n\n" + "진한 에스프레소 위의 부드러운 우유거품이 조화를 이뤄 에스프레소를 부드럽게 느낄 수 있는 커피" + "\n" + "칼로리(14kcal)   당류(0g)   단백질(1g)   포화지방(0.3g)  " + "\n" + "카페인(91mg)";
+		alert(text);
+	}
+  
+  </script>
+ </head>
+ <body>
+ <div>
+	<img src="iceamericano.PNG" width="140" height="200" alt="1" onclick="check(this)" ><br><span>아메리카노(ICE)</span>
+	</div>
+ <div>
+	<img src="아메리카노.PNG" width="140" height="200" alt="2" onclick="check(this)"  ><br><span>아메리카노(HOT)</span>
+	</div>
+ <div>
+	<img src="아이스카페모카.PNG" width="140" height="200" alt="3" onclick="check(this)" ><br><span>카페모카(ICE)</span>
+	</div>
+ <div>
+	<img src="카페모카.PNG" width="140" height="200" alt="4" onclick="check(this)" ><br><span>카페모카(HOT)</span>
+	</div>
+<div>
+	<img src="아이스카푸치노.PNG" width="140" height="200" alt="5" onclick="check(this)" ><br><span>카푸치노(ICE)</span>
+	</div>
+<div>
+	<img src="카푸치노.PNG" width="140" height="200" alt="6" onclick="check(this)" ><br><span>카푸치노(HOT)</span>
+	</div>
+<div>
+	<img src="아이스카라멜마끼야또.PNG" width="140" height="200" alt="7" onclick="check(this)" ><br><span>카라멜마끼야또(ICE)</span>
+	</div>
+<div>
+	<img src="카라멜마끼야또.PNG" width="140" height="200" alt="8" onclick="check(this)" ><br><span>카라멜마끼야또(HOT)</span>
+	</div>
+	<br><br>
+
+<div>
+	<img src="아이스카페라떼.PNG" width="140" height="200" alt="9" onclick="check(this)" ><br><span>카페라떼(ICE)</span>
+	</div>
+<div>
+	<img src="카페라떼.PNG" width="140" height="200" alt="10" onclick="check(this)" ><br><span>카페라떼(HOT)</span>
+	</div>
+ <div>
+	<img src="아이스바닐라라떼.PNG" width="140" height="200" alt="11" onclick="check(this)"  ><br><span>바닐라라떼(ICE)</span>
+	</div>
+ <div>
+	<img src="바닐라라떼.PNG" width="140" height="200" alt="12" onclick="check(this)" ><br><span>바닐라라떼(HOT)</span>
+	</div>
+ <div>
+	<img src="아이스민트모카.PNG" width="140" height="200" alt="13" onclick="check(this)" ><br><span>민트모카(ICE)</span>
+	</div>
+<div>
+	<img src="민트모카.PNG" width="140" height="200" alt="14" onclick="check(this)" ><br><span>민트모카(HOT)</span>
+	</div>
+<div>
+	<img src="니트로커피.PNG" width="140" height="200" alt="15" onclick="check(this)" ><br><span>니트로커피(ICE)</span>
+	</div>
+<div>
+	<img src="콜드브루.PNG" width="140" height="200" alt="16" onclick="check(this)" ><br><span>콜드브루</span>
+	</div>
+
+	<br><br>
+<div>
+	<img src="콜드브루(라떼).PNG" width="140" height="200" alt="17" onclick="check(this)" ><br><span>콜드브루(라떼)</span>
+	</div>
+<div>
+	<img src="아이스화이트초콜릿모카.PNG" width="140" height="200" alt="18" onclick="check(this)" ><br><span>화이트초콜릿모카(ICE)</span>
+	</div>
+<div>
+	<img src="화이트초콜릿모카.PNG" width="140" height="200" alt="19" onclick="check(this)" ><br><span>화이트초콜릿모카(HOT)</span>
+	</div>
+<div>
+	<img src="에스프레소.PNG" width="140" height="200" alt="20" onclick="check(this)" ><br><span>에스프레소</span>
+	</div>
+<div>
+	<img src="에스프레소마끼야또.PNG" width="140" height="200" alt="21" onclick="check(this)" ><br><span>에스프레소 마끼야또</span>
+	</div><br><br>
+	</body>
+</html>

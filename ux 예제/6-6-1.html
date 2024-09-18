@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>6장연습문제</title>
+	<script>
+		function big (a,b) {
+			if (a > b)
+				return a;
+			else if (a < b)
+				return b;
+			else if (a == b)
+				return 0;
+		}
+	</script>
+</head>
+<body>
+	<script>
+		var b=big("625", "555");
+		if (b != 0)
+			document.write("큰 수 = " + b);
+		else
+			document.write("두 수는 같다");
+	</script>
+</body>
+</html>

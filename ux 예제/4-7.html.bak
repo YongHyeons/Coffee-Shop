@@ -1,0 +1,19 @@
+<!doctype htme>
+<html>
+<meta charset ="UTF-8">
+<head><title>4-7</title></head>
+<style>
+	body { background-color : white;}
+	div{display:inline-block;}
+	.card { background-image: url("backcard.PNG"); background-size: cover; width :183px; height : 250px;}
+	.card:hover { background-image: url("spade-7.PNG"); background-size: cover;  width : 183px; height : 230px;}
+	.ex {display : width : 300px; height : 230px; text-align:center; vertical-align:middle;}
+</style>
+<body>
+	<h3>:hover 활용</h3>
+	<hr>
+	<div class="ex">마우스를 올리면 카드의 앞면이 보인다.</div>
+	<div class="card">
+	</div>
+</body>
+</html>

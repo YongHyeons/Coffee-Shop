@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="2016081053">
+  <title>Document</title>
+  <style>
+  body{
+	background : #2d2d2d;
+  }
+  span{
+	color : white;
+	font-size : 13px;
+	font-weight: bold;
+    font-family: "Trebuchet MS";
+  }
+  div{
+  display : inline-block;
+  text-align : center;
+  }
+  div:hover{
+  box-shadow : 2px 2px 2px yellow, 
+		            0px 0px 3px yellow,
+				    0px 0px 30px yellow;}
+  }
+
+  </style>
+
+   <script>
+	function check(obj) {
+		if(obj.alt == "1" || obj.alt == "2")
+			text = "밀크티" + "\n\n" + "잉글리시 브랙퍼스트와 바닐라향이 어우러져 따뜻한 우유에 은은하게 퍼지는 향이 돋보이는 음료" + "\n" + "칼로리(173kcal)   당류(17g)   단백질(7g)   포화지방(5.3g)  " + "\n" + "카페인(18g)";
+		else if(obj.alt == "3" || obj.alt == "4")
+			text = "초콜릿" + "\n\n" + "진한 모카시럽과 부드러운 우유, 그리고 달콤한 휘핑크림의 삼박자가 조화를 이루는 음료" + "\n" + "칼로리(321kcal)   당류(26g)   단백질(6g)   포화지방(15.5g)  " + "\n" + "카페인(9mg)";
+		else if(obj.alt == "5" || obj.alt == "6")
+			text = "화이트 초콜릿" + "\n\n" + "화이트 초콜렛 위에 곁들여진 휘핑크림의 달콤함과 부드러움이 단연 돋보이는 음료" + "\n" + "칼로리(321kcal)   당류(31g)   단백질(5g)   포화지방(15.5g)  " + "\n" + "카페인(137mg)";
+		else if(obj.alt == "7")
+			text = "레몬차" + "\n\n" + "비타민이 풍부한 레몬으로 맛을 내어 새콤달콤한 맛이 특징인 과일차" + "\n" + "칼로리(218kcal)   당류(44g)   단백질(0g)   포화지방(0.1g)  " + "\n" + "카페인(0mg)";
+		else if(obj.alt == "8")
+			text = "캐모마일레드티" + "\n\n" + "붉은 수색을 띄는 허비스커스와 캐모마일 레몬밤의 오묘한 조화를 맛볼 수 있는 상큼한 허브차" + "\n" + "칼로리(0kcal)   당류(0g)   단백질(0g)   포화지방(0g)  " + "\n" + "카페인(0mg)";
+		else if(obj.alt == "9")
+			text = "아이스티" + "\n\n" + "홍차의 깊은 맛과 풍부한 복숭아 향이 어우러진 달콤한 여름철 인기 음료" + "\n" + "칼로리(185kcal)   당류(44g)   단백질(0g)   포화지방(0.8g)  " + "\n" + "카페인(11mg)";
+		else if(obj.alt == "10")
+			text = "얼그레이" + "\n\n" + "베르가뭇향이 물씬 풍기는 상쾌한 맛의 얼그레이 홍차 그윽한 향에 한번, 매혹적인 색에 한번, 맛에 또 한번 반하게 되는 음료" + "\n" + "칼로리(0kcal)   당류(0g)   단백질(0g)   포화지방(0g)  " + "\n" + "카페인(18mg)";
+		else if(obj.alt == "11")
+			text = "유자차" + "\n\n" + "유자 과육이 풍부한 홈메이드 방식의 달콤한 과일차" + "\n" + "칼로리(187kcal)   당류(42g)   단백질(0g)   포화지방(0.1g)  " + "\n" + "카페인(0mg)";
+		else if(obj.alt == "12")
+			text = "자몽차" + "\n\n" + "풍부한 자몽 과육으로 신맛과 쓴맛을 내어 천연의 자몽의 맛을 내는 과일차" + "\n" + "칼로리(186kcal)   당류(42g)   단백질(0g)   포화지방(0g)  " + "\n" + "카페인(0mg)";
+		alert(text);
+	}
+  
+  </script>
+ </head>
+ <body>
+ <div>
+	<img src="milkt.PNG" width="140" height="200" alt="1" onclick="check(this)" ><br><span>밀크티(HOT)</span>
+	</div>
+ <div>
+	<img src="icemilkt.PNG" width="140" height="200" alt="2" onclick="check(this)" ><br><span>밀크티(ICE)</span>
+	</div>
+ <div>
+	<img src="choco.PNG" width="140" height="200" alt="3" onclick="check(this)" ><br><span>초콜릿(HOT)</span>
+	</div>
+ <div>
+	<img src="icechoco.PNG" width="140" height="200" alt="4" onclick="check(this)" ><br><span>초콜릿(ICE)</span>
+	</div>
+ <div>
+	<img src="wchoco.PNG" width="140" height="200" alt="5" onclick="check(this)" ><br><span>화이트초콜릿(HOT)</span>
+	</div>
+ <div>
+	<img src="icewchoco.PNG" width="140" height="200" alt="6" onclick="check(this)" ><br><span>화이트초콜릿(ICE)</span>
+	</div>
+ <div>
+	<img src="lemon.PNG" width="140" height="200" alt="7" onclick="check(this)" ><br><span>레몬차</span>
+	</div>
+ <div>
+	<img src="caemo.PNG" width="140" height="200" alt="8" onclick="check(this)" ><br><span>캐모마일레드티</span>
+	</div>
+	<br><br>
+
+ <div>
+	<img src="icet.PNG" width="140" height="200" alt="9" onclick="check(this)" ><br><span>아이스티</span>
+	</div>
+ <div>
+	<img src="gra.PNG" width="140" height="200" alt="10" onclick="check(this)" ><br><span>얼그레이</span>
+	</div>
+ <div>
+	<img src="youj.PNG" width="140" height="200" alt="11" onclick="check(this)" ><br><span>유자차</span>
+	</div>
+ <div>
+	<img src="jamon.PNG" width="140" height="200" alt="12" onclick="check(this)" ><br><span>자몽차</span>
+	</div>
+ 
+ <br><br>
+	</body>
+</html>

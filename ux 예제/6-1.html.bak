@@ -1,0 +1,17 @@
+﻿<!doctype html>
+<html lang="kr">
+ <head>
+  <meta charset="UTF-8">
+
+  <title>Document</title>
+  <script src="6-1.js">
+  </script>
+ </head>
+ <body>
+  <h3>마우스를 올려보아요</h3>
+  <hr>
+  <div onmouseover="over(this)" onmouseout="out(this)">
+  여기에 마우스를 올리면 배경색이 노란색이 됨</div>
+
+ </body>
+</html>

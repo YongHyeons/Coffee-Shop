@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>6장연습문제</title>
+</head>
+<body>
+<h3>요일을 입력하면 출근,휴일을 알려줘요.</h3>
+<hr>
+<script>
+	var day = prompt("요일 입력","월~일");
+	switch (day) {
+		case "월" :
+		case "화" :
+		case "수" :
+		case "목" :
+		case "금" : document.write(day+"은(는) 출근 입니다."); break;
+		case "토" :
+		case "일" : document.write(day+"은 휴일 입니다."); break;
+		default : document.write("잘못 입력하였습니다.");
+	}
+</script>
+</body>
+</html>

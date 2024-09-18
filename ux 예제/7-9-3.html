@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>7장 연습문제</title>
+<style>
+div {
+	display : inline-block;
+	width : 150px;
+	padding : 10px;
+	}
+</style>
+</HEAD>
+<BODY>
+	<h3>new Object()  book 객체 만들기</h3>
+	<hr>
+	<script>
+		function Book(){
+		this.title = "UX/UI 프로그래밍";
+		this.author = "미상";
+		this.price = "무료";
+		}
+		var books = new Book();
+		document.write("book : ");
+		document.write(books.title + ", ");
+		document.write(books.author + ", ");
+		document.write(books.price + "<br>");
+	</script>
+</BODY>
+</HTML>
