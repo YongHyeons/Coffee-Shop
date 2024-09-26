@@ -1,40 +1,38 @@
 # Coffee-Shop
 
 
-## 도서 관리 및 게시판
+## 커피 전문점 상품 정보 사이트
 
-이 웹사이트는 도서 관리와 커뮤니티 기능을 통합하여, 도서 애호가들이 효율적으로 책을 관리하고 교류할 수 있도록 돕는 플랫폼입니다.
+이 웹사이트는 커피 전문점에서 제공하는 다양한 음료, 브레드, 그리고 MD 상품에 대한 포괄적인 정보를 제공합니다. 
+
 <br><br>
 ### 📖 DISCRIPTION
 
-도서 관리 및 게시판 기능이 포함된 웹사이트는 사용자들이 손쉽게 도서 정보를 관리하고, 
+각 메뉴와 상품에 대한 설명뿐만 아니라, 커피의 원두와 그 특징, 그리고 커피에 대한 기본적인 지식을 통해 고객들이 더 나은 커피 경험을 즐길 수 있도록 돕습니다. 
 
-서로 의견을 나눌 수 있는 플랫폼입니다. 이 웹사이트는 도서 목록을 체계적으로 관리하며, 회원들이 원하는 책을 검색하고, 상세 정보를 확인할 수 있도록 돕습니다.
+커피를 사랑하는 이들에게 최고의 선택을 제공하기 위한 모든 정보를 이곳에서 확인할 수 있도록 도와줍니다.
 
-<br><br>
-#### ⭐ ERD
-
-![bbs_erd](https://github.com/user-attachments/assets/4e81dffc-1cea-4091-9c0c-14bc275eb9ab)
-
-<br><br>
-
-#### ⭐ Project Tree
-
-![image](https://github.com/user-attachments/assets/abfe867c-0a47-4f86-9ab9-ed60e23ba433)
 
 <br><br>
 
 #### ⭐ Technologies Used
 > Language
-- JAVA
-- JSP
-- CSS
 - HTML
 > Tool
-- Eclipse
 - Oracle Database, SQL Developer
   
 <br><br>
+
+#### UX / UI
+-	라디오버튼의 체크 상태를 확인 하고 메뉴를 종류별로 출력하기 위해 라디오버튼에 입력이 들어올 때 onclick = function을 통해 어떤 리스트가 체크 되어있는지 확인함
+-	라디오버튼의 체크상태에 따라서 분류된 메뉴들을 iframe안에 표현하고 분류되어 나타나는 메뉴의 이미지들은 각각 div태그 안에 들어가고 모든 이미지를 inline-block으로 정리함
+- 각 이미지는 style태그 안에서 이미지의 hover시 테두리를 변하게 style을 지정해줌
+-	onclick시 img의 alt값을 가지고 function에 가서 alt값에 따라 해당 메뉴의 상세정보를 찾아 alert를 통해 설명해주는 창을 생성함
+-	<meta> 태그 사용으로 브라우저 검색이 용이함
+-	<img> 태그의 alt 속성을 사용하여 이미지를 분류하여 설명함
+-	<Iframe> 태그를 통해 메뉴를 보여줌으로 메뉴의 구성을 쉽게함
+
+
 
 ---
 ### 📖 Pages View
