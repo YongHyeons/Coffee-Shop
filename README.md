@@ -17,9 +17,12 @@
 
 #### ⭐ Technologies Used
 > Language
-- HTML
+- HTML5
+- css3
+- Javascript
 > Tool
-- Oracle Database, SQL Developer
+- Editplus
+- 알드라이브
   
 <br><br>
 
@@ -55,72 +58,79 @@
 - 판매중인 음료 리스트를 표시
 - COFFEE, ADE, FLATCCINO, BLEANDING TEA 로 구분
 - 각 메뉴는 클릭 시 메뉴에 대한 간략 정보를 팝업으로 표시
-<img src ="https://github.com/user-attachments/assets/019f8b0d-dfc8-4c31-9cfb-539f4018bbe3" width=20%/>
+- 예시 - 화이트 초콜릿 모카 이미지 선택 시
+<img src ="https://github.com/user-attachments/assets/019f8b0d-dfc8-4c31-9cfb-539f4018bbe3" width=50%/>
+
+<br><br>
+
+#### ⭐ 브레드 페이지
+
+![bread](https://github.com/user-attachments/assets/306b680c-9cf6-47a3-94e9-cac6d77ca066)
+
+- 음료 페이지와 동일하게 판매중인 브레드 리스트 표시
+- BREAD, DESSERT, COOKIE 로 구분
+- 각 메뉴는 클릭 시 메뉴에 대한 간략 정보를 팝업으로 표시
+
+<br><br>
+
+#### ⭐ 기획 상품 페이지
+
+![md](https://github.com/user-attachments/assets/1430d480-23a6-4138-b9a5-82791037bb13)
+
+- 판매중인 기획 상품 리스트를 표시
+- 각 상품은 클릭 시 상품에 대한 간략 정보를 팝업으로 표시
+
+<br><br>
+
+#### ⭐ 원두 관리 페이지
+
+![beans](https://github.com/user-attachments/assets/a16f0283-85fa-4694-ba36-fb9eee888686)
+
+- 사용되는 원두의 종류 및 각 원두의 정보를 표시
+- 해당 커피 전문점에서의 원두 블렌딩 방식에 대해 설명
+
+<br><br>
+
+#### ⭐ 커피 정보 페이지
+
+![potency](https://github.com/user-attachments/assets/4b3ec2bb-967e-420a-b334-d961ab73c76e)
+
+- 커피의 정의, 효능, 부작용을 설명하여 고객에서 권장하는 섭취 방식을 설명 
+
+<br><br>
+
+
+---
+### 📖 CODE View
+
+#### ⭐ MenuBar - nav
+
+![image](https://github.com/user-attachments/assets/dc01a5dc-a1d6-4250-998f-f4710319494e)
+
+-	메인화면에서 상단에는 메뉴바로 구성되어 있고 메뉴바의 왼쪽에 있는 이미지는 초기화면으로 돌아가기 위한 링크
+-	메뉴바는 스크롤을 내려도 상단에 고정된 채 표시
+-	메인화면을 포함한 모든 창에는 하단에 작게 메뉴바와 copylight가 표시됨 속성은 topmenu의 스타일을 사용
 
 
 <br><br>
 
-#### ⭐ 도서 정보 페이지
+#### ⭐ Product List
 
-![book_info](https://github.com/user-attachments/assets/f88f35bc-c4a6-469a-bca7-a14af1e0496f)
+![image](https://github.com/user-attachments/assets/0a40fb71-aa23-416f-9153-d91e4e70f83d)
 
-- 선택된 도서에 대한 정보를 표시
-- 장바구니에 담기, 구매하기 기능 구현
-
-<br><br>
-
-#### ⭐ 도서 수정 페이지
-
-![book_update(manager_ver)](https://github.com/user-attachments/assets/fda3ba8d-739b-470e-b982-bfb82e3a97dd)
-
-- 도서 등록자 검증 이후 수정 기능 구현
-- 해당 도서에 대한 내용 수정 기능
+-	초기 라디오버튼은 coffee버튼에 checked된 것으로 정함
+-	라디오버튼내의 다른 체크박스를 입력하면 function output 을 통해 어느 요소가 체크되었는지 여부를 확인하고 체크된 요소를 찾으면 그 요소에 해당하는 이미지들을 가진 html을 iframe안에 링크 시켜 이미지들을 표시한다. 
 
 <br><br>
 
-#### ⭐ 게시판 페이지
+#### ⭐ Product Information
 
-![bbs_list](https://github.com/user-attachments/assets/aecb8922-03d4-4a68-a813-d3d7522fea80)
+![image](https://github.com/user-attachments/assets/350aaf3b-121f-475f-8fa2-548b027ea143)
 
-- 등록된 게시글 목록 표시
-- 각 게시글에 대한 기본 정보를 표시
-- 게시글 선택 시 상세보기 페이지로 이동
-
-<br><br>
-
-#### ⭐ 게시글 보기
-
-![bbs_info](https://github.com/user-attachments/assets/8ed805f3-7935-432a-8cbc-db1da90772e3)
-
-- 게시글 상세내용 표시
-- 게시글 작성자가 현재 로그인된 유저라면 수정 및 삭제 기능 구현
-
-<br><br>
-
-#### ⭐ 게시글 수정
-
-![bbs_update](https://github.com/user-attachments/assets/46a2de64-bad8-4f09-b1d1-e92f174dce75)
-
-- 작성자 검증 이후 게시글 내용 수정 기능 구현
-
-<br><br>
-
-#### ⭐ 구매 내역
-
-![payhistory](https://github.com/user-attachments/assets/39356cc6-9136-4e63-bb6b-3be8ca6813fc)
-
-- 로그인한 유저가 구매한 도서 리스트 표시
-- 각 도서의 기본 정보와 구매 수량, 금액, 구매일자 표시
-
-<br><br>
-
-#### ⭐ 장바구니
-
-![basket](https://github.com/user-attachments/assets/07e6133e-236e-47fa-bf19-27457761a687)
-
-- 현재 유저가 장바구니에 담은 도서 목록 표시
-- 각 도서 기본 정보를 제공
-- 장바구니 리스트에서 제거하기 위한 취소 기능 구현
+-	정보를 얻고자 하는 이미지를 선택하고 클릭했을 때 onclick을 통해 이미지의 alt 값이 function check의 obj에게 전달됨
+-	전달받은 매개변수를 검사하면서 해당 메뉴의 alt값과 동일한 키를 가진 if문을 실행하여 text에 메뉴의 대한 설명을 저장시킴
+-	검사가 끝나면 저장되어 있는 text값을 alert를 통해 창에 출력하여 보여줌 
+-	각 메뉴에 따라 다른 설명을 가지고 check에 따라 text값은 초기화.
 
 <br><br>
 
