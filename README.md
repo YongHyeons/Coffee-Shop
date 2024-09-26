@@ -39,33 +39,24 @@
 
 <br>
 
-#### ⭐ 회원가입 및 로그인 페이지
-
-![join](https://github.com/user-attachments/assets/6fd3c2f3-bdea-4b06-97ea-0445e14e73cb)
-
-![login](https://github.com/user-attachments/assets/9aa52b19-7d71-4148-8b6b-128b5bebe5af)
-
-- 회원가입 : 아이디, 비밀번호, 이름, 성별, 이메일 입력 시 회원가입 할 수 있도록 기능 구현
-- 로그인 : 회원가입 이후 로그인 검증 및 메인 페이지로 이동
-
-<br><br>
-
 #### ⭐ 메인 페이지
 
-![메인화면](https://github.com/user-attachments/assets/5bd9ea8b-c314-4efd-98e1-1aadb4920f73)
+![main](https://github.com/user-attachments/assets/a92023b8-0622-4206-bbaa-8f0fab5523f4)
 
-- 사이트에서 소개하는 글과 이미지를 표시
+- 사이트에서 보여주고자 하는 메뉴에 대해 이미지를 표시 및 바로가기 제공
 - 헤더에 표시한 메뉴바를 통해 페이지 이동
 
 <br><br>
 
-#### ⭐ 도서 목록 페이지
+#### ⭐ 음료 페이지
 
-![book_list](https://github.com/user-attachments/assets/19f35a22-e412-421c-bc3a-476cf20f0a5a)
+![coffee](https://github.com/user-attachments/assets/e92aabd4-f586-48a1-86ab-de7f48a91312)
 
-- 현재 등록되어 있는 도서 목록을 표시
-- 각 도서별 도서코드, 제목, 저자, 출판사, 가격을 표시
-- 장바구니에 담기 기능 구현
+- 판매중인 음료 리스트를 표시
+- COFFEE, ADE, FLATCCINO, BLEANDING TEA 로 구분
+- 각 메뉴는 클릭 시 메뉴에 대한 간략 정보를 팝업으로 표시
+<img src ="https://github.com/user-attachments/assets/019f8b0d-dfc8-4c31-9cfb-539f4018bbe3" width=20%/>
+
 
 <br><br>
 
